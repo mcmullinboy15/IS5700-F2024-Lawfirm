@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 /**
  * asjdflkasjdf
- * 
- * @returns 
+ *
+ * @returns
  */
 export default function ({ img, children }) {
   return (
@@ -28,7 +30,7 @@ export default function ({ img, children }) {
 export function HeaderButton({ className, children, ...props }) {
   return (
     <li className={className}>
-      <a {...props}>{children}</a>
+      <Link {...props}>{children}</Link>
     </li>
   );
 }

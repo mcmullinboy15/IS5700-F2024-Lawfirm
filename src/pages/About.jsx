@@ -1,5 +1,4 @@
 import Header, { HeaderButton } from "../components/Header";
-import { Link } from "react-router-dom";
 
 import Footer from "../components/Footer";
 
@@ -10,10 +9,10 @@ export default function About() {
       <Header
         img={<img src="images/logo.png" alt="LOGO" height="52" width="362" />}
       >
-        <HeaderButton href="index.html">Home</HeaderButton>
-        <HeaderButton href="practices.html">Practices</HeaderButton>
-        <HeaderButton href="lawyers.html">Our Lawyers</HeaderButton>
-        <HeaderButton className="active" href="news.html">
+        <HeaderButton to="/">Home</HeaderButton>
+        <HeaderButton to="/practices">Practices</HeaderButton>
+        <HeaderButton to="/lawyers">Our Lawyers</HeaderButton>
+        <HeaderButton className="active" to="/news">
           News
           {/* <div>
           <a href="singlepost.html">News Single Post</a>
