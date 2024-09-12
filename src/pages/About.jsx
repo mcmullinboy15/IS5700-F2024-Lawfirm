@@ -1,24 +1,6 @@
-import Header, { HeaderButton } from "../components/Header";
-import Footer from "../components/Footer";
-
 export default function About() {
   return (
     <>
-      <Header
-        img={<img src="images/logo.png" alt="LOGO" height="52" width="362" />}
-      >
-        <HeaderButton href="index.html">Home</HeaderButton>
-        <HeaderButton href="practices.html">Practices</HeaderButton>
-        <HeaderButton href="lawyers.html">Our Lawyers</HeaderButton>
-        <HeaderButton className="active" href="news.html">
-          News
-          {/* <div>
-          <a href="singlepost.html">News Single Post</a>
-        </div> */}
-        </HeaderButton>
-        <HeaderButton href="contact.html">Contact</HeaderButton>
-      </Header>
-
       <div id="contents">
         <div className="clearfix">
           <h1>About Us</h1>
@@ -91,7 +73,6 @@ export default function About() {
           </p>
         </div>
       </div>
-      <Footer />
     </>
   );
 }
