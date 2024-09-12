@@ -4,7 +4,7 @@ import Footer from '../components/Footer.jsx';
 export default function Post() {
     return (
 		<>
-        <Header />
+
 	<div id="contents">
 		<div class="clearfix">
 			<div class="sidebar">
@@ -45,7 +45,7 @@ export default function Post() {
 			</div>
 		</div>
 	</div>
-	<Footer />
+
 	</>
     )
 }
