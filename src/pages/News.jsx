@@ -1,7 +1,6 @@
-import happyImage from '../../assets/images/happy.jpg';
-import brideSideviewImage from '../../assets/images/bride-sideview.jpg';
-import childrenImage from '../../assets/images/children.jpg';
-
+import happyImage from '../assets/images/happy.jpg';
+import brideSideviewImage from '../assets/images/bride-sideview.jpg';
+import childrenImage from '../assets/images/children.jpg';
 
 //news component
 export default function News() {
