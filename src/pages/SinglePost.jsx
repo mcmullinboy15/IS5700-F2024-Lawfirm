@@ -4,7 +4,6 @@ import Footer from "../components/Footer.jsx";
 export default function () {
   return (
     <>
-      <Header />
       <div id="contents">
         <div class="clearfix">
           <div class="sidebar">
@@ -66,7 +65,6 @@ export default function () {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }
