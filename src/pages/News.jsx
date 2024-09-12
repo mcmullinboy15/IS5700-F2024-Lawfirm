@@ -4,6 +4,7 @@ import childrenImage from '../../assets/images/children.jpg';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
+//news component
 export default function News() {
     return (
         <>
