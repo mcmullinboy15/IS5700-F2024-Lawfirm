@@ -9,7 +9,7 @@ export default function Contact() {
           <a href="index.html">Home</a>
         </li>
         <li>
-          <a href="about.html">About</a>
+          <a to="/about">About</a>
         </li>
         <li>
           <a href="practices.html">Practices</a>

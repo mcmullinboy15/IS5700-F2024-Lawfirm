@@ -1,6 +1,9 @@
 import Header, { HeaderButton } from "../components/Header";
+import { Link } from "react-router-dom";
+
 import Footer from "../components/Footer";
 
+//hello world
 export default function About() {
   return (
     <>
@@ -16,7 +19,7 @@ export default function About() {
           <a href="singlepost.html">News Single Post</a>
         </div> */}
         </HeaderButton>
-        <HeaderButton href="contact.html">Contact</HeaderButton>
+        <HeaderButton to="/contact">Contact</HeaderButton>
       </Header>
 
       <div id="contents">
