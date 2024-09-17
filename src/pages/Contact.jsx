@@ -1,31 +1,6 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import { Link } from "react-router-dom";
-
 export default function Contact() {
   return (
     <>
-      <Header>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/practices">Practices</Link>
-        </li>
-        <li>
-          <Link to="/lawyers">Our Lawyers</Link>
-        </li>
-        <li class="active">
-          <Link to="/news">News</Link>
-          <div>
-            <Link to="/singlepost">News Single Post</Link>
-          </div>
-        </li>
-      </Header>
-
       <div id="contents">
         <div class="clearfix">
           <div class="sidebar">
@@ -78,7 +53,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

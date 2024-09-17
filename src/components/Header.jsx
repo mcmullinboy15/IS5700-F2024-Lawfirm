@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 /**
  * asjdflkasjdf
  *
@@ -11,7 +9,7 @@ export default function ({ img, children }) {
       <div id="header">
         <div class="clearfix">
           <div class="logo">
-            <a href="index.html">{img}</a>
+            <a href="/">{img}</a>
           </div>
           <ul class="navigation">{children}</ul>
         </div>
@@ -30,7 +28,7 @@ export default function ({ img, children }) {
 export function HeaderButton({ className, children, ...props }) {
   return (
     <li className={className}>
-      <Link {...props}>{children}</Link>
+      <a {...props}>{children}</a>
     </li>
   );
 }
