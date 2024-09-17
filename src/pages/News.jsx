@@ -1,13 +1,11 @@
-import happyImage from '../../assets/images/happy.jpg';
-import brideSideviewImage from '../../assets/images/bride-sideview.jpg';
-import childrenImage from '../../assets/images/children.jpg';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import happyImage from '../assets/images/happy.jpg';
+import brideSideviewImage from '../assets/images/bride-sideview.jpg';
+import childrenImage from '../assets/images/children.jpg';
 
+//news component
 export default function News() {
     return (
         <>
-        <Header />
         <div class="main">
             <h1>News</h1>
             <ul class="news">
@@ -52,7 +50,6 @@ export default function News() {
                 </li>
             </ul>
         </div>
-        <Footer />
     </>
     );
 }
