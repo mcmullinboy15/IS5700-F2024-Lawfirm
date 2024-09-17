@@ -1,11 +1,6 @@
-import Footer from "../components/Footer";
-import Header, { HeaderButton } from "../components/Header";
-
 export default function Practices() {
-
   return (
     <>
-      <Header />
       <div id="contents">
         <div class="clearfix">
           <div class="sidebar">
@@ -71,7 +66,6 @@ export default function Practices() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

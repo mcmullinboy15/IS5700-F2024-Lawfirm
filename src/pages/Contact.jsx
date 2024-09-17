@@ -1,26 +1,27 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
     <>
       <Header>
         <li>
-          <a href="index.html">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="about.html">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="practices.html">Practices</a>
+          <Link to="/practices">Practices</Link>
         </li>
         <li>
-          <a href="lawyers.html">Our Lawyers</a>
+          <Link to="/lawyers">Our Lawyers</Link>
         </li>
         <li class="active">
-          <a href="news.html">News</a>
+          <Link to="/news">News</Link>
           <div>
-            <a href="singlepost.html">News Single Post</a>
+            <Link to="/singlepost">News Single Post</Link>
           </div>
         </li>
       </Header>
