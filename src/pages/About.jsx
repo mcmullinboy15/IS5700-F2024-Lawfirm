@@ -1,22 +1,24 @@
 import Header, { HeaderButton } from "../components/Header";
+
 import Footer from "../components/Footer";
 
+//hello world
 export default function About() {
   return (
     <>
       <Header
         img={<img src="images/logo.png" alt="LOGO" height="52" width="362" />}
       >
-        <HeaderButton href="index.html">Home</HeaderButton>
-        <HeaderButton href="practices.html">Practices</HeaderButton>
-        <HeaderButton href="lawyers.html">Our Lawyers</HeaderButton>
-        <HeaderButton className="active" href="news.html">
+        <HeaderButton to="/">Home</HeaderButton>
+        <HeaderButton to="/practices">Practices</HeaderButton>
+        <HeaderButton to="/lawyers">Our Lawyers</HeaderButton>
+        <HeaderButton className="active" to="/news">
           News
           {/* <div>
           <a href="singlepost.html">News Single Post</a>
         </div> */}
         </HeaderButton>
-        <HeaderButton href="contact.html">Contact</HeaderButton>
+        <HeaderButton to="/contact">Contact</HeaderButton>
       </Header>
 
       <div id="contents">
