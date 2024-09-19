@@ -6,14 +6,12 @@
 export default function ({ img, children }) {
   return (
     <>
-      <div>
-        <div>
-          {img && (
-            <div>
-              <a href="/">{img}</a>
-            </div>
-          )}
-          <ul>{children}</ul>
+      <div id="header">
+        <div class="clearfix">
+          <div class="logo">
+            <a href="/">{img}</a>
+          </div>
+          <ul class="navigation">{children}</ul>
         </div>
       </div>
     </>
