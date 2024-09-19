@@ -1,6 +1,7 @@
 export default function McMullinBoy15() {
   return (
     <>
+    
       <div className="mt-8 w-full grid grid-cols-3">
         <div className="col-span-2">
           <p className="text-center font-bold text-3xl">Andrew McMullin</p>
