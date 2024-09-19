@@ -18,13 +18,16 @@ export default function McMullinBoy15() {
                 Email
               </a>
               {/* Resume */}
-              <a className="text-blue-500" href="">
+              <a
+                className="text-blue-500"
+                href="https://portfolio.mcmullin.app/resume"
+              >
                 Resume
               </a>
               {/* GitHub */}
               <a
                 className="text-blue-500"
-                href="https://github.com/McMullinBoy15"
+                href="https://github.com/mcmullinboy15"
               >
                 GitHub
               </a>
