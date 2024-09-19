@@ -29,7 +29,8 @@ export default function Practices() {
               </p>
             </div>
           </div>
-          <div class="main">
+
+          <div className="pt-8">
             <h1>Practices</h1>
             <p>
               This website template has been designed by{" "}
@@ -43,21 +44,28 @@ export default function Practices() {
               template, then don't hesitate to ask for help on the{" "}
               <a href="http://www.freewebsitetemplates.com/forums/">Forums</a>.
             </p>
-            <ul class="practices">
-              <li class="frame5">
-                <a href="post.html" class="box">
+            <ul className="flex flex-wrap gap-y-8 gap-x-4">
+              {/* <ul className="grid grid-cols-2 gap-4"> */}
+              <li className="">
+                <a href="post.html">
                   <img src="images/prenuptial.jpg" height="198" width="265" />
                   <span>Prenuptial Agreement</span>
                 </a>
               </li>
-              <li class="frame5">
-                <a href="post.html" class="box">
+              <li className="">
+                <a href="post.html">
                   <img src="images/bride.jpg" height="198" width="265" />
                   <span>Marriage</span>
                 </a>
               </li>
-              <li class="frame5">
-                <a href="post.html" class="box">
+              <li className="">
+                <a href="post.html">
+                  <img src="images/divorce.jpg" height="198" width="265" />
+                  <span>Divorce</span>
+                </a>
+              </li>
+              <li className="">
+                <a href="post.html">
                   <img src="images/divorce.jpg" height="198" width="265" />
                   <span>Divorce</span>
                 </a>
