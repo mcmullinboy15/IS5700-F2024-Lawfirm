@@ -6,6 +6,7 @@ export default function Layout({ children }) {
     <>
       <Header>
         <HeaderButton href="/">Home</HeaderButton>
+        <HeaderButton href="/jkamin0">jkamin0</HeaderButton>
       </Header>
 
       {children}
