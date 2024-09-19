@@ -7,10 +7,32 @@ import Layout from "./components/Layout";
 import News from "./pages/News";
 import Lawyers from "./pages/Lawyers";
 import SinglePost from "./pages/SinglePost";
+import { createUseStyles } from "react-jss";
+
+// const useStyles = createUseStyles({
+//   app: {
+//     color: "blue",
+//     padding: 10,
+//   },
+// });
 
 function App() {
+  // const classes = useStyles();
+  // console.log("classes", classes);
+
   return (
     <Layout>
+      {/* <>
+        <div className={classes.app}>Hello World</div>
+        <div
+          style={{
+            color: "blue",
+            padding: 10,
+          }}
+        >
+          Hello World
+        </div>
+      </> */}
       <Router>
         <Routes>
           <Route path="/" element={<About />} />
@@ -37,16 +59,18 @@ export default App;
 //   <div className={"flex " + direction ? "flex-row" : ""}>{children}</div>
 // );
 
-// import { createUseStyles } from 'react-jss';
-
-// const useStyles = createUseStyles({
-//   app: {
-//     color: 'blue',
-//     padding: 10,
-//   },
-// });
-
 // function App() {
-//   const classes = useStyles();
-//   return <div className={classes.app}>Hello World</div>;
+//   return (
+//     <>
+//       <div className={classes.app}>Hello World</div>
+//       <div
+//         style={{
+//           color: "blue",
+//           padding: 10,
+//         }}
+//       >
+//         Hello World
+//       </div>
+//     </>
+//   );
 // }

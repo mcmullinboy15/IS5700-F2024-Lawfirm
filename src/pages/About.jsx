@@ -1,9 +1,9 @@
 export default function About() {
   return (
     <>
-      <div id="contents">
+      <div id="contents" className="pb-6">
         <div className="clearfix">
-          <h1>About Us</h1>
+          <h1 className="w-[940px] pt-8 px-3 pb-0">About Us</h1>
           <div class="frame2">
             <div class="box">
               <img
@@ -14,7 +14,15 @@ export default function About() {
               />
             </div>
           </div>
-          <h2>We Have Free Templates for Everyone</h2>
+
+          <h2 style={{ minHeight: "calc(100vh - 4rem)", minWidth: "900px" }}>
+            We Have Free Templates for Everyone
+          </h2>
+          {/* 
+          <h2 class="min-h-[calc(100vh-4rem)] min-w-[900px]">
+            We Have Free Templates for Everyone
+          </h2> */}
+
           <p>
             Our website templates are created with inspiration, checked for
             quality and originality and meticulously sliced and coded. What's
