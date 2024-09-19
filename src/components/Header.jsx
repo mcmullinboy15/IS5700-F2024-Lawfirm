@@ -1,5 +1,7 @@
 /**
- * asjdflkasjdf
+ * @param {object} props
+ * @param {JSX.Element} props.img
+ * @param {JSX.Element} props.children
  *
  * @returns
  */
