@@ -6,6 +6,18 @@ import Home from "./pages/Home";
 import ChanceWiese from "./portfolios/chancewiese";
 import Mcmullinboy15 from "./portfolios/mcmullinboy15";
 import AaricP from "./portfolios/aaricp";
+import KassieJenson from "./portfolios/kassiejenson";
+import { createTheme, ThemeProvider } from "@mui/material";
+
+const theme = createTheme({
+  palette: {
+    mode: 'dark',
+    background: {
+      dark: '#18181B',
+      light: '#FFFFFF',
+    }
+  }
+})
 
 function App() {
   return (
@@ -16,6 +28,7 @@ function App() {
           <Route path="/mcmullinboy15" element={<Mcmullinboy15 />} />
           <Route path="/chancewiese" element={<ChanceWiese />} />
           <Route path="/aaricp" element={<AaricP />} />
+          <Route path="/kassiejenson" element={<KassieJenson />} />
         </Routes>
       </Router>
     </Layout>
