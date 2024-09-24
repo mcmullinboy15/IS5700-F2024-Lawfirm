@@ -10,7 +10,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/rhettjorgensen" element={<Rhett />} />
+          <Route path="/mcmullinboy15.jsx" element={<McMullinBoy15 />} />
+          <Route path="/JorgenGear" element={<Rhett />} />
         </Routes>
       </Router>
     </Layout>
