@@ -5,19 +5,21 @@ import Home from "./pages/Home";
 
 import ChanceWiese from "./portfolios/chancewiese";
 import Mcmullinboy15 from "./portfolios/mcmullinboy15";
+import AaricP from "./portfolios/aaricp";
 
 function App() {
-   return (
-      <Layout>
-         <Router>
-            <Routes>
-               <Route path="/" element={<Home />} />
-               <Route path="/mcmullinboy15" element={<Mcmullinboy15 />} />
-               <Route path="chancewiese" element={<ChanceWiese />} />
-            </Routes>
-         </Router>
-      </Layout>
-   );
+  return (
+    <Layout>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/mcmullinboy15" element={<Mcmullinboy15 />} />
+          <Route path="/chancewiese" element={<ChanceWiese />} />
+          <Route path="/aaricp" element={<AaricP />} />
+        </Routes>
+      </Router>
+    </Layout>
+  );
 }
 
 export default App;
