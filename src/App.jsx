@@ -7,20 +7,34 @@ import Jkamin0 from "./portfolios/jkamin0";
 import ChanceWiese from "./portfolios/chancewiese";
 import Mcmullinboy15 from "./portfolios/mcmullinboy15";
 import AaricP from "./portfolios/aaricp";
+import { createTheme, ThemeProvider } from "@mui/material";
+
+const theme = createTheme({
+  palette: {
+    mode: "dark",
+    secondary: {
+      light: "#FFD2D2",
+      main: "#FF0000",
+      dark: "#18181B",
+    },
+  },
+});
 
 function App() {
   return (
-    <Layout>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/mcmullinboy15" element={<Mcmullinboy15 />} />
-          <Route path="/chancewiese" element={<ChanceWiese />} />
-          <Route path="/aaricp" element={<AaricP />} />
-          <Route path="/jkamin0" element={<Jkamin0 />} />
-        </Routes>
-      </Router>
-    </Layout>
+    <ThemeProvider theme={theme}>
+      <Layout>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/mcmullinboy15" element={<Mcmullinboy15 />} />
+            <Route path="/chancewiese" element={<ChanceWiese />} />
+            <Route path="/aaricp" element={<AaricP />} />
+            <Route path="/jkamin0" element={<Jkamin0 />} />
+          </Routes>
+        </Router>
+      </Layout>
+    </ThemeProvider>
   );
 }
 
