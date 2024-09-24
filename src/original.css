@@ -1,8 +1,0 @@
-/*
-npx tailwindcss build src/original.css -o src/index.css
-*/
-
-/* src/index.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
