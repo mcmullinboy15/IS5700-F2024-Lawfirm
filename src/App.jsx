@@ -17,7 +17,7 @@ function App() {
           <Route path="/mcmullinboy15" element={<Mcmullinboy15 />} />
           <Route path="/chancewiese" element={<ChanceWiese />} />
           <Route path="/aaricp" element={<AaricP />} />
-            <Route path="/jkamin0" element={<Jkamin0 />} />
+          <Route path="/jkamin0" element={<Jkamin0 />} />
         </Routes>
       </Router>
     </Layout>

@@ -11,7 +11,6 @@ export default function Layout({ children }) {
         <HeaderButton href="/aaricp">AaricP </HeaderButton>
         <HeaderButton href="/asdf">Asdf </HeaderButton>
         <HeaderButton href="/jkamin0">jkamin0</HeaderButton>
-
       </Header>
 
       {children}
