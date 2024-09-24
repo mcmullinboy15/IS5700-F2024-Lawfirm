@@ -6,25 +6,21 @@ export default function McMullinBoy15() {
           <p className="text-center font-bold text-3xl">Andrew McMullin</p>
           <div className="flex justify-center items-center">
             <div className="flex gap-x-8">
-              {/* Linked in  */}
               <a
                 className="text-blue-500"
                 href="https://www.linkedin.com/in/andrew-mcmullin/"
               >
                 LinkedIn
               </a>
-              {/* Email */}
               <a className="text-blue-500" href="mailto:mcmullinand@gmail.com">
                 Email
               </a>
-              {/* Resume */}
               <a
                 className="text-blue-500"
                 href="https://portfolio.mcmullin.app/resume"
               >
                 Resume
               </a>
-              {/* GitHub */}
               <a
                 className="text-blue-500"
                 href="https://github.com/mcmullinboy15"
