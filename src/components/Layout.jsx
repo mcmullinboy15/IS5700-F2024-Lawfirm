@@ -3,7 +3,8 @@ import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
-    <div >
+
+    <div className="h-svh bg-background-dark text-white">
       <Header>
         <HeaderButton href="/">Home</HeaderButton>
         <HeaderButton href="/mcmullinboy15">Mcmullinboy15 </HeaderButton>
