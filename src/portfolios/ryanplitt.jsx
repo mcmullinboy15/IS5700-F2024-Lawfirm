@@ -1,9 +1,14 @@
 import * as React from "react";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineDot from "@mui/lab/TimelineDot";
+import TimelineOppositeContent, {
+	timelineOppositeContentClasses,
+} from "@mui/lab/TimelineOppositeContent";
 import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const data = {
 	experience: [
@@ -108,23 +113,35 @@ export default function RyanPlitt() {
 					/>
 				</div>
 			</div>
-			<div className="mt-24">
-				{data.experience.map((exp, index) => (
-					<Accordion>
-						<AccordionSummary expandIcon={<ExpandMoreIcon />}>
-							<p>
-								{exp.jobTitle} @ {exp.companyName}
-							</p>
-						</AccordionSummary>
-						<AccordionDetails>
-							<ul>
-								{exp.description.map((desc, index) => (
-									<li key={index}>{desc}</li>
-								))}
-							</ul>
-						</AccordionDetails>
-					</Accordion>
-				))}
+			<div className="py-24 w-4/5">
+				<Timeline
+					sx={{
+						[`& .${timelineOppositeContentClasses.root}`]: {
+							flex: 0.5,
+						},
+					}}
+				>
+					{data.experience.map((exp) => (
+						<TimelineItem>
+							<TimelineOppositeContent variant="h6">
+								<Typography variant="h7" component="span">
+									{exp.companyName}
+								</Typography>
+								<Typography color="text.secondary">{exp.dates}</Typography>
+							</TimelineOppositeContent>
+							<TimelineSeparator>
+								<TimelineDot />
+								<TimelineConnector />
+							</TimelineSeparator>
+							<TimelineContent>
+								<Typography variant="h7" component="span">
+									{exp.jobTitle}
+								</Typography>
+								<Typography color="text.secondary">{exp.description}</Typography>
+							</TimelineContent>
+						</TimelineItem>
+					))}
+				</Timeline>
 			</div>
 		</>
 	);
