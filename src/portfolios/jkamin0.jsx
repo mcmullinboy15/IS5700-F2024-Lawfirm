@@ -6,6 +6,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import DescriptionIcon from "@mui/icons-material/Description";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 const data = {
   experience: [
@@ -16,19 +17,20 @@ const data = {
       description: [
         "The Utah State University Space Dynamics Laboratory has been solving the technical challenges faced by the military, science community, and industry for more than six decades",
         "We provide multi-domain mission solutions with expertise in satellites, sensors and instruments, ground systems and data processing, and advanced autonomous systems.",
-        "Learn more at: https://www.sdl.usu.edu/",
       ],
+      link: "https://www.sdl.usu.edu/",
     },
     {
-      jobTitle: "Database Engineer Intern",
-      companyName: "The Church of Jesus Christ of Latter Day Saints",
-      dates: "May 2023 - September 2023",
+      jobTitle: "Database Engineering Intern",
+      companyName: "SmartScout",
+      dates: "January 2023 - September 2023",
       description: [
         "Engineer on MSSQL team, managing over 50+ machines and DBs",
         "Refactored 15+ existing PowerShell scripts to interface with new MSSQL Servers",
         "Implemented Transparent Data Encryption on 100+ MSSQL Servers",
         "Troubleshot and fixed dozens of server issues, reducing down time by over 30% for affected systems",
       ],
+      link: "https://www.smartscout.com/",
     },
     {
       jobTitle: "Data Engineering Intern",
@@ -39,6 +41,7 @@ const data = {
         "Resolved bugs and issues on Apache Airflow server, decreasing server downtime by 20%",
         "Produced resilient SQL queries for use by BI team to report on company analytics",
       ],
+      link: "https://walkeredison.com/?pb=0",
     },
   ],
 };
@@ -104,14 +107,17 @@ export default function Jkamin0() {
           </div>
         </div>
 
-        <div className="mt-24">
+        <div className="mt-24 ">
           {data.experience.map((exp, index) => (
             <Accordion key={index}>
               <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <p>
+                <p className="font-bold text-lg">
+                  <a href={exp.link}>
+                    <OpenInNewIcon className="mr-2 text-blue-500" />
+                  </a>
                   {exp.jobTitle} @ {exp.companyName}
                 </p>
-                <p>({exp.dates})</p>
+                <p className="text-lg">-({exp.dates})</p>
               </AccordionSummary>
               <AccordionDetails>
                 <div>
