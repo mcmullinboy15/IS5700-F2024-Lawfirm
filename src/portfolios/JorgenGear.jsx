@@ -5,6 +5,11 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
+import SummarizeIcon from '@mui/icons-material/Summarize';
+
 
 const data = {
     experience: [
@@ -34,31 +39,36 @@ export default function Rhett() {
                     <p className="text-center font-bold text-3xl">Rhett Jorgensen</p>
                     <div className="flex justify-center items-center">
                         <div className="flex gap-x-8">
+                            <GitHubIcon onClick={() => window.open("https://github.com/JorgenGear")} />
+                            <LinkedInIcon onClick={() => window.open("https://www.linkedin.com/in/rhett-jorgensen/")} />
+                            <EmailIcon onClick={() => window.open("mailto:rhettjorg@gmail.com")} />
+                            <SummarizeIcon onClick={() => window.open("https://www.linkedin.com/in/rhett-jorgensen/")} />
+
                             {/* Linked in  */}
-                            <a
+                            {/* <a
                                 className="text-blue-500"
                                 href="https://www.linkedin.com/in/rhett-jorgensen/"
                             >
                                 LinkedIn
-                            </a>
+                            </a> */}
                             {/* Email */}
-                            <a className="text-blue-500" href="mailto:rhettjorg@gmail.com">
+                            {/* <a className="text-blue-500" href="mailto:rhettjorg@gmail.com">
                                 Email
-                            </a>
+                            </a> */}
                             {/* Resume */}
-                            <a
+                            {/* <a
                                 className="text-blue-500"
                                 href="https://www.linkedin.com/in/rhett-jorgensen/"
                             >
                                 Resume
-                            </a>
+                            </a> */}
                             {/* GitHub */}
-                            <a
+                            {/* <a
                                 className="text-blue-500"
                                 href="https://github.com/JorgenGear"
                             >
                                 GitHub
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                     <p className="text-center">Graduate Student at Utah State University</p>
