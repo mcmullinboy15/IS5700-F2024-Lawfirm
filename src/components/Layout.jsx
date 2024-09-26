@@ -11,6 +11,7 @@ export default function Layout({ children }) {
         <HeaderButton href="/aaricp">AaricP </HeaderButton>
         <HeaderButton href="/kassiejenson">KassieJenson </HeaderButton>
         <HeaderButton href="/asdf">Asdf </HeaderButton>
+        <HeaderButton href="/JorgenGear">JorgenGear</HeaderButton>
       </Header>
 
       {children}
