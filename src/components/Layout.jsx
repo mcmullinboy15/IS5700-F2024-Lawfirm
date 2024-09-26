@@ -12,6 +12,7 @@ export default function Layout({ children }) {
         <HeaderButton href="/aaricp">AaricP </HeaderButton>
         <HeaderButton href="/asdf">Asdf </HeaderButton>
         <HeaderButton href="/hamnerben">Hamnerben </HeaderButton>
+        <HeaderButton href="/JorgenGear">JorgenGear</HeaderButton>
       </Header>
 
       {children}
