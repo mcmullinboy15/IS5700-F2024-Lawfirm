@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 
+import Rhett from "./portfolios/JorgenGear";
 import ChanceWiese from "./portfolios/chancewiese";
 import Mcmullinboy15 from "./portfolios/mcmullinboy15";
 import AaricP from "./portfolios/aaricp";
@@ -21,21 +22,22 @@ const theme = createTheme({
 });
 
 function App() {
-	return (
-		<ThemeProvider theme={theme}>
-			<Layout>
-				<Router>
-					<Routes>
-						<Route path="/" element={<Home />} />
-						<Route path="/mcmullinboy15" element={<Mcmullinboy15 />} />
-						<Route path="/chancewiese" element={<ChanceWiese />} />
-						<Route path="/aaricp" element={<AaricP />} />
-						<Route path="/ryanplitt" element={<RyanPlitt />} />
-					</Routes>
-				</Router>
-			</Layout>
-		</ThemeProvider>
-	);
+  return (
+    <ThemeProvider theme={theme}>
+      <Layout>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/mcmullinboy15" element={<Mcmullinboy15 />} />
+            <Route path="/chancewiese" element={<ChanceWiese />} />
+            <Route path="/aaricp" element={<AaricP />} />
+            <Route path="/JorgenGear" element={<Rhett />} />
+            <Route path="/ryanplitt" element={<RyanPlitt />} />
+          </Routes>
+        </Router>
+      </Layout>
+    </ThemeProvider>
+  );
 }
 
 export default App;
