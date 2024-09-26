@@ -17,8 +17,8 @@ export default {
           dark: "#8B0000",
         },
         background: {
-          dark: '#18181B',
-        }
+          dark: "#18181B",
+        },
       },
     },
   },
