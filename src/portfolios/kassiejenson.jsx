@@ -4,7 +4,13 @@ import AccordionActions from '@mui/material/AccordionActions';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Button from '@mui/material/Button';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import ArticleIcon from '@mui/icons-material/Article';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import PaletteIcon from '@mui/icons-material/Palette';
+
+import { useState } from 'react';
 
 const data = {
     experience: [
@@ -29,43 +35,50 @@ const data = {
 }
 
 export default function KassieJenson() {
+  const [isColorChanged, setIsColorChanged] = useState(false);
+  const [color, setColor] = useState('#FFFFFF');
+
+  const toggleColor = () => {
+    if (isColorChanged) {
+      setColor('#FFFFFF');
+    }
+    setIsColorChanged(prev => !prev);
+  };
+
+  const handleMouseMoving = (event) => {
+    if (isColorChanged) {
+      const {clientX, clientY } = event;
+
+      const red = Math.floor((clientX / window.innerWidth) * 255);
+      const green = Math.floor((clientY / window.innerHeight) * 255);
+      const blue = 220;
+
+      setColor(`rgb(${red}, ${green}, ${blue})`);
+    }
+    
+  }
+
     return (
       <>
-        <div className="mt-8 w-full grid grid-cols-3">
+        <div onMouseMove={handleMouseMoving} className="mt-8 w-full grid grid-cols-3">
           <div className="col-span-2">
-            <p className="text-center font-bold text-3xl">Kassie Jenson</p>
-            <div className="flex justify-center items-center">
-              <div className="flex gap-x-8">
-                {/* Linked in  */}
-                <a
-                  className="text-blue-500"
-                  href="https://www.linkedin.com/in/kassandrajenson/"
-                >
-                  LinkedIn
-                </a>
-                {/* Email */}
-                <a className="text-blue-500" href="mailto:kassandra.jenson@gmail.com">
-                  Email
-                </a>
-                {/* Resume */}
-                <a
-                  className="text-blue-500"
-                  href="RESUME LINK HERE"
-                >
-                  Resume
-                </a>
-                {/* GitHub */}
-                <a
-                  className="text-blue-500"
-                  href="https://github.com/kassiejenson"
-                >
-                  GitHub
-                </a>
-              </div>
+              <p style={{color}} className="text-center font-bold text-5xl">Kassie Jenson</p>
+            <div style={{
+              display: 'flex',
+              justifyContent: 'center',
+            }}>
+              <a href="https://www.linkedin.com/in/kassandrajenson/" target="_blank" title="LinkedIn Profile" className="mx-4"><LinkedInIcon fontSize="large"></LinkedInIcon></a>
+              <a href="mailto:kassandra.jenson@gmail.com" target="_blank" title="Email" className="mx-4"><AlternateEmailIcon fontSize="large"></AlternateEmailIcon></a>
+              <a href="https://www.bmc.org/sites/default/files/Patient_Care/Specialty_Care/Pediatrics-Infectious-Diseases/Fake-Resume.pdf" target="_blank" title="Resume" className="mx-4"><ArticleIcon fontSize="large"></ArticleIcon></a>
+              <a href="https://github.com/kassiejenson" target="_blank" title="GitHub" className="mx-4"><GitHubIcon fontSize="large"></GitHubIcon></a>
+              <PaletteIcon style={{color}} className="mx-4" fontSize="large" title="Switch it up..." onClick={toggleColor}></PaletteIcon>
             </div>
+
+            <div className='text-center'>
             <p>Undergrad student and aspiring software developer</p>
             <p>Northern Utah</p>
-            <p className="w-full mt-8">Fun paragraph about me!!!</p>
+            <p className="w-full mt-8">Insert fun paragraph about me!!!</p>
+            </div>
           </div>
   
           <div className="col-span-1 mx-auto">
