@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
+import Hamnerben from "./portfolios/hamnerben";
 
 import Rhett from "./portfolios/JorgenGear";
 import ChanceWiese from "./portfolios/chancewiese";
@@ -23,18 +24,21 @@ const theme = createTheme({
 
 function App() {
   return (
-    <Layout>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/mcmullinboy15" element={<Mcmullinboy15 />} />
-          <Route path="/chancewiese" element={<ChanceWiese />} />
-          <Route path="/aaricp" element={<AaricP />} />
-          <Route path="/kassiejenson" element={<KassieJenson />} />            
-          <Route path="/JorgenGear" element={<Rhett />} />
-        </Routes>
-      </Router>
-    </Layout>
+    <ThemeProvider theme={theme}>
+      <Layout>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/hamnerben" element={<Hamnerben />} />
+            <Route path="/mcmullinboy15" element={<Mcmullinboy15 />} />
+            <Route path="/chancewiese" element={<ChanceWiese />} />
+            <Route path="/aaricp" element={<AaricP />} />
+            <Route path="/kassiejenson" element={<KassieJenson />} />    
+            <Route path="/JorgenGear" element={<Rhett />} />
+          </Routes>
+        </Router>
+      </Layout>
+    </ThemeProvider>
   );
 }
 
