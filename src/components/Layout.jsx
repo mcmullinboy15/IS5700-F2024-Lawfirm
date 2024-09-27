@@ -3,6 +3,7 @@ import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
+
     <div className="h-svh bg-background-dark text-white">
       <Header>
         <HeaderButton href="/">Home</HeaderButton>
@@ -11,6 +12,7 @@ export default function Layout({ children }) {
         <HeaderButton href="/aaricp">AaricP </HeaderButton>
         <HeaderButton href="/kassiejenson">KassieJenson </HeaderButton>
         <HeaderButton href="/asdf">Asdf </HeaderButton>
+        <HeaderButton href="/hamnerben">Hamnerben </HeaderButton>
         <HeaderButton href="/JorgenGear">JorgenGear</HeaderButton>
       </Header>
 

@@ -4,6 +4,7 @@ import AccordionActions from '@mui/material/AccordionActions';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import ArticleIcon from '@mui/icons-material/Article';
@@ -57,12 +58,14 @@ export default function KassieJenson() {
     }
     
   }
-
+  
+  
     return (
       <>
         <div onMouseMove={handleMouseMoving} className="mt-8 w-full grid grid-cols-3">
           <div className="col-span-2">
               <p style={{color}} className="text-center font-bold text-5xl">Kassie Jenson</p>
+
             <div style={{
               display: 'flex',
               justifyContent: 'center',
@@ -74,11 +77,11 @@ export default function KassieJenson() {
               <PaletteIcon style={{color}} className="mx-4" fontSize="large" title="Switch it up..." onClick={toggleColor}></PaletteIcon>
             </div>
 
-            <div className='text-center'>
+
+          <div className='text-center'>
             <p>Undergrad student and aspiring software developer</p>
             <p>Northern Utah</p>
             <p className="w-full mt-8">Insert fun paragraph about me!!!</p>
-            </div>
           </div>
   
           <div className="col-span-1 mx-auto">
