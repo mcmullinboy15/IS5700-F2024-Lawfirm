@@ -64,7 +64,7 @@ export default function KassieJenson() {
       <>
         <div onMouseMove={handleMouseMoving} className="mt-8 w-full grid grid-cols-3">
           <div className="col-span-2">
-              <p style={{color}} className="text-center font-bold text-5xl">Kassie Jenson</p>
+            <p style={{color}} className="text-center font-bold text-5xl">Kassie Jenson</p>
 
             <div style={{
               display: 'flex',
@@ -113,6 +113,7 @@ export default function KassieJenson() {
                 </Accordion>
             ))}
         </div>
-      </>
-    );
-  }
+      </div>
+    </>
+  );
+}
