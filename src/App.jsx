@@ -8,22 +8,22 @@ import Rhett from "./portfolios/JorgenGear";
 import ChanceWiese from "./portfolios/chancewiese";
 import Mcmullinboy15 from "./portfolios/mcmullinboy15";
 import AaricP from "./portfolios/aaricp";
+import KassieJenson from "./portfolios/kassiejenson";
+
 import { createTheme, ThemeProvider } from "@mui/material";
 
 const theme = createTheme({
   palette: {
-    mode: "dark",
-    secondary: {
-      light: "#FFD2D2",
-      main: "#FF0000",
-      dark: "#18181B",
-    },
-  },
-});
+    mode: 'dark',
+    background: {
+      dark: '#18181B',
+      light: '#FFFFFF',
+    }
+  }
+})
 
 function App() {
   return (
-
     <ThemeProvider theme={theme}>
       <Layout>
         <Router>
@@ -33,6 +33,7 @@ function App() {
             <Route path="/mcmullinboy15" element={<Mcmullinboy15 />} />
             <Route path="/chancewiese" element={<ChanceWiese />} />
             <Route path="/aaricp" element={<AaricP />} />
+            <Route path="/kassiejenson" element={<KassieJenson />} />    
             <Route path="/JorgenGear" element={<Rhett />} />
           </Routes>
         </Router>
