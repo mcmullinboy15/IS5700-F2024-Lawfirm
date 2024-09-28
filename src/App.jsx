@@ -8,6 +8,7 @@ import Rhett from "./portfolios/JorgenGear";
 import ChanceWiese from "./portfolios/chancewiese";
 import Mcmullinboy15 from "./portfolios/mcmullinboy15";
 import AaricP from "./portfolios/aaricp";
+import RyanPlitt from "./portfolios/ryanplitt";
 import KassieJenson from "./portfolios/kassiejenson";
 
 import { createTheme, ThemeProvider } from "@mui/material";
@@ -35,6 +36,7 @@ function App() {
             <Route path="/aaricp" element={<AaricP />} />
             <Route path="/kassiejenson" element={<KassieJenson />} />    
             <Route path="/JorgenGear" element={<Rhett />} />
+            <Route path="/ryanplitt" element={<RyanPlitt />} />
           </Routes>
         </Router>
       </Layout>
