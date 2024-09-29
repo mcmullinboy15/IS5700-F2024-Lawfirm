@@ -3,18 +3,19 @@ import Footer from "./Footer";
 
 export default function Layout({ children }) {
 	return (
-		<div className="h-svh bg-background-dark text-white">
-			<Header>
-				<HeaderButton href="/">Home</HeaderButton>
-				<HeaderButton href="/mcmullinboy15">Mcmullinboy15 </HeaderButton>
-				<HeaderButton href="/chancewiese">ChanceWiese </HeaderButton>
-				<HeaderButton href="/aaricp">AaricP </HeaderButton>
-				<HeaderButton href="/kassiejenson">KassieJenson </HeaderButton>
-				<HeaderButton href="/hamnerben">Hamnerben </HeaderButton>
-				<HeaderButton href="/JorgenGear">JorgenGear</HeaderButton>
-				<HeaderButton href="/ryanplitt">ryanplitt</HeaderButton>
-        <HesderButton href="/jkamin0">jkamin0</HeaderButton>
-			</Header>
+    <div className="h-svh bg-background-dark text-white">
+      <Header>
+        <HeaderButton href="/">Home</HeaderButton>
+        <HeaderButton href="/mcmullinboy15">Mcmullinboy15 </HeaderButton>
+        <HeaderButton href="/chancewiese">ChanceWiese </HeaderButton>
+        <HeaderButton href="/aaricp">AaricP </HeaderButton>
+        <HeaderButton href="/johniparker">johniparker</HeaderButton>
+        <HeaderButton href="/kassiejenson">KassieJenson </HeaderButton>
+        <HeaderButton href="/jkamin0">jkamin0</HeaderButton>
+        <HeaderButton href="/hamnerben">Hamnerben </HeaderButton>
+        <HeaderButton href="/JorgenGear">JorgenGear</HeaderButton>
+        <HeaderButton href="/ryanplitt">ryanplitt</HeaderButton>
+      </Header>
 
 			{children}
 
