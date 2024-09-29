@@ -1,9 +1,59 @@
+// Accordion
 import Accordion from "@mui/material/Accordion";
-import AccordionActions from "@mui/material/AccordionActions";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Button from "@mui/material/Button";
+
+// Search Bar
+import * as React from "react";
+import { styled, alpha } from "@mui/material/styles";
+import Toolbar from "@mui/material/Toolbar";
+import InputBase from "@mui/material/InputBase";
+import SearchIcon from "@mui/icons-material/Search";
+
+// vvv Search Bar vvv
+const Search = styled("div")(({ theme }) => ({
+  position: "relative",
+  borderRadius: theme.shape.borderRadius,
+  backgroundColor: alpha(theme.palette.common.white, 0.15),
+  "&:hover": {
+    backgroundColor: alpha(theme.palette.common.white, 0.25),
+  },
+  marginLeft: 0,
+  width: "100%",
+  [theme.breakpoints.up("sm")]: {
+    marginLeft: theme.spacing(1),
+    width: "auto",
+  },
+}));
+
+const SearchIconWrapper = styled("div")(({ theme }) => ({
+  padding: theme.spacing(0, 2),
+  height: "100%",
+  position: "absolute",
+  pointerEvents: "none",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+}));
+
+const StyledInputBase = styled(InputBase)(({ theme }) => ({
+  color: "inherit",
+  width: "100%",
+  "& .MuiInputBase-input": {
+    padding: theme.spacing(1, 1, 1, 0),
+    // vertical padding + font size from searchIcon
+    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+    transition: theme.transitions.create("width"),
+    [theme.breakpoints.up("sm")]: {
+      width: "12ch",
+      "&:focus": {
+        width: "20ch",
+      },
+    },
+  },
+}));
+// ^^^ Search Bar ^^^
 
 const data = {
   experience: [
@@ -42,8 +92,52 @@ const data = {
 export default function AaricP() {
   return (
     <>
+      <Toolbar>
+        <Search>
+          <SearchIconWrapper>
+            <SearchIcon />
+          </SearchIconWrapper>
+          <StyledInputBase
+            placeholder="Search…"
+            inputProps={{ "aria-label": "search" }}
+          />
+        </Search>
+      </Toolbar>
+
       <div>
-        <h1 className="w-[940px] pt-8 px-3 pb-0">AaricP</h1>
+        <h1 className="text-center font-bold text-3xl">Aaric Putt</h1>
+        <div className="flex gap-x-8 text-blue-500 justify-center">
+          <a href="https://google.com">Resume</a>
+          <a href="https://github.com/AaricP">GitHub</a>
+          <a href="mailto:a02279785@aggies.usu.edu">Email</a>
+        </div>
+        <p className="text-center">Student at Utah State University</p>
+        <p className="text-center w-full mt-8">
+          I'm doing my undergrad in Information Systems: Web Development
+          Ephasis. I enjoy fixing things and learning. I especially love
+          learning programming languages and writing programs that automate
+          tasks.
+        </p>
+      </div>
+
+      <div className="mt-24">
+        {data.experience.map((exp, index) => (
+          <Accordion>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <p>
+                {exp.jobTitle} @ {exp.companyName}
+              </p>
+              <p>({exp.dates})</p>
+            </AccordionSummary>
+            <AccordionDetails>
+              <div>
+                {exp.description.map((desc) => (
+                  <p>{desc}</p>
+                ))}
+              </div>
+            </AccordionDetails>
+          </Accordion>
+        ))}
       </div>
       
       <div className="mt-24">
