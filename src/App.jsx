@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
+
 import Jkamin0 from "./portfolios/jkamin0";
 import Hamnerben from "./portfolios/hamnerben";
-
 import JohnIParker from "./portfolios/johniparker";
 import Rhett from "./portfolios/JorgenGear";
 import ChanceWiese from "./portfolios/chancewiese";
