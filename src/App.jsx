@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
+import Jkamin0 from "./portfolios/jkamin0";
 import Hamnerben from "./portfolios/hamnerben";
 
 import Rhett from "./portfolios/JorgenGear";
@@ -15,13 +16,13 @@ import { createTheme, ThemeProvider } from "@mui/material";
 
 const theme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: "dark",
     background: {
-      dark: '#18181B',
-      light: '#FFFFFF',
-    }
-  }
-})
+      dark: "#18181B",
+      light: "#FFFFFF",
+    },
+  },
+});
 
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
             <Route path="/mcmullinboy15" element={<Mcmullinboy15 />} />
             <Route path="/chancewiese" element={<ChanceWiese />} />
             <Route path="/aaricp" element={<AaricP />} />
-            <Route path="/kassiejenson" element={<KassieJenson />} />    
+            <Route path="/jkamin0" element={<Jkamin0 />} />
+            <Route path="/kassiejenson" element={<KassieJenson />} />
             <Route path="/JorgenGear" element={<Rhett />} />
             <Route path="/ryanplitt" element={<RyanPlitt />} />
           </Routes>
