@@ -139,6 +139,26 @@ export default function AaricP() {
           </Accordion>
         ))}
       </div>
+      
+      <div className="mt-24">
+        {data.experience.map((exp, index) => (
+          <Accordion>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <p>
+                {exp.jobTitle} @ {exp.companyName}
+              </p>
+              <p>({exp.dates})</p>
+            </AccordionSummary>
+            <AccordionDetails>
+              <div>
+                {exp.description.map((desc) => (
+                  <p>{desc}</p>
+                ))}
+              </div>
+            </AccordionDetails>
+          </Accordion>
+        ))}
+      </div>
     </>
   );
 }
